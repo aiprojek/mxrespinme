@@ -40,12 +40,12 @@ function redirectToTelegram() {
   }
   /* Pengaturan Pesan */
   var messageText = "Pesan baru dari " + name + "\n\n"; // Pesan Pembuka
-  messageText += "*Nama:* " + name + "\n";
-  messageText += "*Email:* " + email + "\n";
-  messageText += "*Subjek:* " + subject + "\n";
-  messageText += "*Pesan:* " + message + "\n\n";
+  messageText += "**Nama:** " + name + "\n";
+  messageText += "**Email:** " + email + "\n";
+  messageText += "**Subjek:** " + subject + "\n";
+  messageText += "**Pesan:** " + message + "\n\n";
   messageText += "=============================" + "\n";
-  messageText += "*Dari:* " + postLink + "\n";
+  messageText += "**Dari:** " + postLink + "\n";
   messageText += "=============================";
   /* Pengaturan Telegram */
   var telegramLink = 'https://t.me/aiprojek01', // Ganti dengan username Telegram Anda
