@@ -64,4 +64,19 @@ for (var i = 0; i < inputs.length; i++) {
   });
 }
 
+// Auto-show Notice Modal on page load if present
+function initNoticeModal() {
+  var noticeModalEl = document.getElementById('noticeModal');
+  if (noticeModalEl && typeof bootstrap !== 'undefined') {
+    var noticeModal = new bootstrap.Modal(noticeModalEl);
+    noticeModal.show();
+  }
+}
+
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', initNoticeModal);
+} else {
+  initNoticeModal();
+}
+
 
